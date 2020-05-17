@@ -83,6 +83,7 @@ io.on("connection", (socket) => {
         if(hash[url].arr.length == 0){
             d = url+"&0";
             console.log("sub-g",d);
+             
             hash[url].arr.push(d);
         }else{
             if(hash[url].arr.length != hash[url].j){
